@@ -43,7 +43,7 @@ public class Tools: NSObject {
     public static func getAppName() -> String?{
         return Bundle.main.infoDictionary!["CFBundleIdentifier"] as? String
     }
-    fileprivate static func openCellularData(){
+    public static func openCellularData(){
         if #available(iOS 9.0, *) {
             let cellularData = CTCellularData()
             

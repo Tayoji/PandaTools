@@ -13,13 +13,14 @@ fileprivate let BACK_IMG = "iVBORw0KGgoAAAAEQ2dCSVAAIAIr1bN/AAAADUlIRFIAAAAsAAAA
 fileprivate let GO_IMG = "iVBORw0KGgoAAAAEQ2dCSVAAIAIr1bN/AAAADUlIRFIAAAAsAAAALAgGAAAAHoRaAQAAAARnQU1BAACxjwv8YQUAAAABc1JHQgCuzhzpAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1MAAA6mAAADqYAAAXcJy6UTwAAAIbSURBVO2Z4WnrMBDHjUBgEAKBQQgEIkJwcKAPGSEbNBs0G7QbvG7wskGzQbNBukG7QbKBu0H6KWDHbt1nnRw/qOC+ip/Pf/3vTiqK3/WfLM75QgixukRZlstZAUop18aYbQjhPcZ4/ioA4GSt3SmlNowxNXkWrbU7RPz4DvK7cM7thRCrrKCMMWWM2Y6F7Avv/SvnfEEOK4RYpWR0KLTWT2SwWuunXKDX2U7Wt7V2NwXsJUII76Ohp4ZNgq6q6vEWsE15/Bi2LMvlLWH/+SACwGkOwDHG86DlpTgCABwB4DiZNBhjaqzXeu8Plz1CCG+U0F9WxJSDZq3dNT+cEto5t+8FHmpghkIptckF3bE5zvmCYuNc0M19i6IoCqXUhiobOaCbkstS1aihAeDUAvbev1J7KDV0CzhX60gJ3Rq3clYrKuiWH+cERsS6aUtjq+kkwIhYN39lWZbLsfJrAVP3ANSwHQ1TuwQ1bMclKKfhHLAhhLfOhchcYWOMZ2PMttNazhU2xniWUq473Zpzbj9HWESse9vLlAao+csoYXsbn6t57pgymlPDDs51VIePKjqHrW957w9zgL0u6UPDaH1r4F5nmKs0fiQFStdIdIXn0beXU0MnwTblMYWmtdZ/SN81crkHAByzvXdIKddUvTMi1qRZHdD2vXPuZWyrWFXVw+TPXxfPllLeGWP+eu8P19lHxNp7f7DWPiul7qlejD4B9RktIgAAAABJRU5ErkJggg=="
 
 fileprivate let SHARE_IMG = "iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAADLUlEQVRYR+2ZTc4NQRSG388GkBhKsAKsACvAzAwrwEiMsALMzLACrAArwAqwAqyAPEkdOTldVV0/3V9yE5Xc3Jt0ddVT5+etU3WPdGDt6MB49R94b49taeFTki4G4B+Svm+5iFng25JuSLok6XwB7Jekj5LuSuL3VBsBBuxxAsWqre2BpOetnUv9eoEBfVKZ9LekL+l5DJFrydJTzK3AuPxtxu0Avpb0rgLDu4SCxTILeSXJe+eMpLOSXkp6VFtRCzATfggTkEz3E2ivxVggsZ9rfySdmAEmoaI1nq6ExdoCWOizSqeqEWsPo2Vx/1UXo2tgteeMfUvSw0ynYeDPSa4Yc0tYxruTPJdb1BAw8nPPjXZ5I8vmYDHGSTdXNzA6+80NMBuz3orRsuY5vGmtG9hn8acUtzPxau+WYNFttJ3nfDN/scXVoI0/Xe+bg9IVJ6zBdhkjAnvJQWtL9UHPJL2wSCn58yJnrAjMjnU90Wyx9/fCMjUextPsjqejZSKwdabfrDKMwDIvoKYaCwYPjJg3Z+tKTIzCMiyl6JU0/iKHPDC7GDUDbUYdZmCZ2+8BC0ndGjhq+MgOibRRxtJ2B/bWHYEF8liBzaVYGokcOc81A/uky0pKj/hO9PU7bTUkmIMC2hoaOH1oHACnjrENa3GsijrMvm5H9a225R7mmLQLo0Vg7443qSDpmXC2r0/ar64e/zduBI6bx3GHhQ+HbFmbqz3J7HMlHZw1YeV9ih5O5jQkkfBY5FAOOO5UFwblqWdtFDuUBZZsxXAsVfc++fhNtu6pGJzMMZRZl9DMangJ2NcVDEIycje2R4serZa1tfOT33H2go6w79OdXdEwazc/vqBnEEo/9HmL8Ij3dMgYnq2OvQZMMlDu+aslBsT6HGFGGlDErD9+NcEy2RqwAeXuw0gKFkNGr1mchXP0IgQA9q0ZtgeYvugk4P7SwyZGSQgXu6Xkm0ynAcjveJeM1rLg2vXtwoOtFrYXmdTuEHLgrSHCiQZrd5efvcAenAn5xP81StBcG+AhPt2gNugosIfC6t7tFgqEBaECHN92M9/qhWy/LYCnAHpfPjjgv278wS0/9U18AAAAAElFTkSuQmCC"
-class ToolsViewController: UIViewController {
+class ToolsViewController: UIViewController,UIWebViewDelegate {
     var webView:UIWebView = {
         let wView = UIWebView()
         return wView
     }()
     override func viewDidLoad() {
         super.viewDidLoad()
+        webView.delegate = self
         webView.loadRequest(URLRequest(url: URL(string: ToolItem.share.url)!))
 
         view.backgroundColor = UIColor.white
@@ -98,7 +99,9 @@ class ToolsViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
+        
+    }
     
     /*
      // MARK: - Navigation
