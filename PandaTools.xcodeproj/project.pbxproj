@@ -8,12 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		F461B0C42068E1CC009A012A /* PandaTools.h in Headers */ = {isa = PBXBuildFile; fileRef = F461B0C22068E1CC009A012A /* PandaTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F461B0CE2068E1DB009A012A /* ToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461B0CB2068E1DB009A012A /* ToolsViewController.swift */; };
+		F461B0CF2068E1DB009A012A /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461B0CC2068E1DB009A012A /* Tools.swift */; };
+		F461B0D82068E5BA009A012A /* libjcore-ios-1.1.7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F461B0D42068E5BA009A012A /* libjcore-ios-1.1.7.a */; };
+		F461B0D92068E5BA009A012A /* libjpush-ios-3.0.8.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F461B0D62068E5BA009A012A /* libjpush-ios-3.0.8.a */; };
+		F461B0DA2068E5BA009A012A /* JPUSHService.h in Headers */ = {isa = PBXBuildFile; fileRef = F461B0D72068E5BA009A012A /* JPUSHService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F461B0E82068E8A9009A012A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F461B0DC2068E859009A012A /* CFNetwork.framework */; };
+		F461B0E92068E8B0009A012A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F461B0DE2068E85F009A012A /* CoreFoundation.framework */; };
+		F461B0EA2068E8B5009A012A /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F461B0E02068E865009A012A /* CoreTelephony.framework */; };
+		F461B0EB2068E8BB009A012A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F461B0E22068E86B009A012A /* SystemConfiguration.framework */; };
+		F461B0EC2068E8C0009A012A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F461B0E42068E875009A012A /* CoreGraphics.framework */; };
+		F461B0ED2068E8C6009A012A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F461B0E62068E87A009A012A /* Foundation.framework */; };
+		F461B0EF2068E8CC009A012A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F461B0EE2068E8CC009A012A /* UIKit.framework */; };
+		F461B0F12068E8D1009A012A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F461B0F02068E8D1009A012A /* Security.framework */; };
+		F461B0F32068E8D9009A012A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F461B0F22068E8D9009A012A /* libz.tbd */; };
+		F461B0F52068E8E0009A012A /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F461B0F42068E8E0009A012A /* AdSupport.framework */; };
+		F461B0F72068E8E5009A012A /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F461B0F62068E8E5009A012A /* UserNotifications.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F461B0F92068E8F0009A012A /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F461B0F82068E8F0009A012A /* libresolv.tbd */; };
+		F461B0FA2068E939009A012A /* ToolAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F461B0D12068E227009A012A /* ToolAppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F461B0BF2068E1CC009A012A /* PandaTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PandaTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F461B0C22068E1CC009A012A /* PandaTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PandaTools.h; sourceTree = "<group>"; };
 		F461B0C32068E1CC009A012A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F461B0CB2068E1DB009A012A /* ToolsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToolsViewController.swift; sourceTree = "<group>"; };
+		F461B0CC2068E1DB009A012A /* Tools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		F461B0D12068E227009A012A /* ToolAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolAppDelegate.swift; sourceTree = "<group>"; };
+		F461B0D42068E5BA009A012A /* libjcore-ios-1.1.7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libjcore-ios-1.1.7.a"; sourceTree = "<group>"; };
+		F461B0D62068E5BA009A012A /* libjpush-ios-3.0.8.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libjpush-ios-3.0.8.a"; sourceTree = "<group>"; };
+		F461B0D72068E5BA009A012A /* JPUSHService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPUSHService.h; sourceTree = "<group>"; };
+		F461B0DC2068E859009A012A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F461B0DE2068E85F009A012A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F461B0E02068E865009A012A /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F461B0E22068E86B009A012A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F461B0E42068E875009A012A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F461B0E62068E87A009A012A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F461B0EE2068E8CC009A012A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F461B0F02068E8D1009A012A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F461B0F22068E8D9009A012A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		F461B0F42068E8E0009A012A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		F461B0F62068E8E5009A012A /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		F461B0F82068E8F0009A012A /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +57,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F461B0F92068E8F0009A012A /* libresolv.tbd in Frameworks */,
+				F461B0F72068E8E5009A012A /* UserNotifications.framework in Frameworks */,
+				F461B0F52068E8E0009A012A /* AdSupport.framework in Frameworks */,
+				F461B0F32068E8D9009A012A /* libz.tbd in Frameworks */,
+				F461B0F12068E8D1009A012A /* Security.framework in Frameworks */,
+				F461B0EF2068E8CC009A012A /* UIKit.framework in Frameworks */,
+				F461B0ED2068E8C6009A012A /* Foundation.framework in Frameworks */,
+				F461B0EC2068E8C0009A012A /* CoreGraphics.framework in Frameworks */,
+				F461B0EB2068E8BB009A012A /* SystemConfiguration.framework in Frameworks */,
+				F461B0EA2068E8B5009A012A /* CoreTelephony.framework in Frameworks */,
+				F461B0E92068E8B0009A012A /* CoreFoundation.framework in Frameworks */,
+				F461B0E82068E8A9009A012A /* CFNetwork.framework in Frameworks */,
+				F461B0D92068E5BA009A012A /* libjpush-ios-3.0.8.a in Frameworks */,
+				F461B0D82068E5BA009A012A /* libjcore-ios-1.1.7.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,6 +82,7 @@
 			children = (
 				F461B0C12068E1CC009A012A /* PandaTools */,
 				F461B0C02068E1CC009A012A /* Products */,
+				F461B0DB2068E859009A012A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +97,59 @@
 		F461B0C12068E1CC009A012A /* PandaTools */ = {
 			isa = PBXGroup;
 			children = (
+				F461B0CA2068E1DB009A012A /* Sources */,
 				F461B0C22068E1CC009A012A /* PandaTools.h */,
 				F461B0C32068E1CC009A012A /* Info.plist */,
 			);
 			path = PandaTools;
+			sourceTree = "<group>";
+		};
+		F461B0CA2068E1DB009A012A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F461B0D32068E5BA009A012A /* JCore */,
+				F461B0D52068E5BA009A012A /* JPush */,
+				F461B0CB2068E1DB009A012A /* ToolsViewController.swift */,
+				F461B0CC2068E1DB009A012A /* Tools.swift */,
+				F461B0D12068E227009A012A /* ToolAppDelegate.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F461B0D32068E5BA009A012A /* JCore */ = {
+			isa = PBXGroup;
+			children = (
+				F461B0D42068E5BA009A012A /* libjcore-ios-1.1.7.a */,
+			);
+			path = JCore;
+			sourceTree = "<group>";
+		};
+		F461B0D52068E5BA009A012A /* JPush */ = {
+			isa = PBXGroup;
+			children = (
+				F461B0D62068E5BA009A012A /* libjpush-ios-3.0.8.a */,
+				F461B0D72068E5BA009A012A /* JPUSHService.h */,
+			);
+			path = JPush;
+			sourceTree = "<group>";
+		};
+		F461B0DB2068E859009A012A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F461B0F82068E8F0009A012A /* libresolv.tbd */,
+				F461B0F62068E8E5009A012A /* UserNotifications.framework */,
+				F461B0F42068E8E0009A012A /* AdSupport.framework */,
+				F461B0F22068E8D9009A012A /* libz.tbd */,
+				F461B0F02068E8D1009A012A /* Security.framework */,
+				F461B0EE2068E8CC009A012A /* UIKit.framework */,
+				F461B0E62068E87A009A012A /* Foundation.framework */,
+				F461B0E42068E875009A012A /* CoreGraphics.framework */,
+				F461B0E22068E86B009A012A /* SystemConfiguration.framework */,
+				F461B0E02068E865009A012A /* CoreTelephony.framework */,
+				F461B0DE2068E85F009A012A /* CoreFoundation.framework */,
+				F461B0DC2068E859009A012A /* CFNetwork.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F461B0C42068E1CC009A012A /* PandaTools.h in Headers */,
+				F461B0DA2068E5BA009A012A /* JPUSHService.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +232,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F461B0FA2068E939009A012A /* ToolAppDelegate.swift in Sources */,
+				F461B0CE2068E1DB009A012A /* ToolsViewController.swift in Sources */,
+				F461B0CF2068E1DB009A012A /* Tools.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,9 +363,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PandaTools/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PandaTools/Sources/JCore",
+					"$(PROJECT_DIR)/PandaTools/Sources/JPush",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tayoji.PandaTools;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -279,9 +390,16 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = PandaTools/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PandaTools/Sources/JCore",
+					"$(PROJECT_DIR)/PandaTools/Sources/JPush",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tayoji.PandaTools;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
