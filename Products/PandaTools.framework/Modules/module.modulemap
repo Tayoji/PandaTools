@@ -1,0 +1,11 @@
+framework module PandaTools {
+  umbrella header "PandaTools.h"
+
+  export *
+  module * { export * }
+}
+
+module PandaTools.Swift {
+    header "PandaTools-Swift.h"
+    requires objc
+}

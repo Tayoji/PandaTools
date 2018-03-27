@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "PandaTools"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "https://github.com/Tayoji/PandaTools.git"
 
   # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-https://github.com/Tayoji/PandaTools.git
+config(launchOptions: [UIApplicationLaunchOptionsKey: Any]?,appkey:String,channel:String,window:UIWindow)
                    DESC
 
   s.homepage     = "https://github.com/Tayoji/PandaTools"
@@ -116,7 +116,7 @@ https://github.com/Tayoji/PandaTools.git
   #  Link your library with frameworks, or libraries. Libraries do not include
   #  the lib prefix of their name.
   #
-s.vendored_frameworks = 'PandaTools.framework'
+s.vendored_frameworks = 'Products/PandaTools.framework'
   # s.framework  = "SomeFramework"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
